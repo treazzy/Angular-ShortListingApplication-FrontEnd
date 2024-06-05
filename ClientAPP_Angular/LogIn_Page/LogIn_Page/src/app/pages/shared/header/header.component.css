@@ -1,0 +1,81 @@
+header {
+    padding: 10px;
+    background: rgb(10, 18, 44);
+    
+}
+.logo{
+    width: 120px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.desktop-menu {
+    margin-top: 24px;
+}
+.desktop-menu ul {
+    padding: 0;
+    margin: 0;
+}
+.desktop-menu li {
+    list-style: none;
+    color: azure;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 6px;
+    padding: 10px 0 10px 28px;
+    border-bottom: 1px solid gray;
+    border-style: none;
+}
+.desktop-menu ul li:hover {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: bisque;
+    transition: 0.4s ease-in-out;
+}
+/* .menu-icon {
+    display: none; 
+} */
+.background_Img {
+    width: 100%;
+    height: 50%;
+    
+    /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width:128px) and (max-width:900px) {
+    .desktop-menu{
+        position:fixed;
+        right: -280px;
+        top: 64px;
+        background: black;
+        width: 280px;
+        height: 100%;
+        
+    }
+    .desktop-menu ul li {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 10px 0 10px 28px;
+        border-bottom: 1px solid gray;
+    }
+    .menu-icon{
+        display: block;
+        color: blanchedalmond;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .mobile-menu{
+        right: 0;
+        transition: 0.4s ease-in-out;
+    }
+}
+@media screen and (min-width:901px) {
+    .menu-icon{
+        display: none;
+    }
+}

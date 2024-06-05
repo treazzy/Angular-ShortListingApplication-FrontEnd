@@ -1,0 +1,39 @@
+<div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> User successfully Registered.
+  <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class='parent'>
+  <div class="container">
+  <div class="register-box">
+    <h2>Register</h2>
+<form [formGroup] = "registerUserForm" >
+  <div class="input-box">
+    <input type="text" id="firstName" name ="firstName" required formControlName = "firstName">
+    <label>First Name:</label>
+  </div>
+  <div class="input-box">
+    <input type="text" id="lastName" name = "lastName" required formControlName = "lastName">
+    <label>Last Name:</label>
+  </div>
+  <div class="input-box">
+    <input type="email" id="emailAddress" name="emailAddress" required formControlName = "emailAddress">
+    <label>Email Address:</label>
+  </div>
+  <div class="input-box">
+    <input type="tel" id="phoneNumber" name="phoneNumber" required formControlName = "phoneNumber">
+    <label>Phone Number:</label>
+  </div>
+  <div class="input-box">
+    <input type="password" id="password" name="password" required formControlName = "password">
+    <label>Password:</label>
+  </div>
+  <div class="input-box">
+    <input type="confirmpassword" id="confirmpassword" name="confirmpassword" required>
+    <label>Confirm Password:</label>
+  </div>
+  <button type="submit" class="btn" (click)="registerUser()" >Register</button>
+  <div class="login-link" routerLinkActive="active">
+    <a routerLink="/login">Login</a>
+  </div>
+ </form>
+

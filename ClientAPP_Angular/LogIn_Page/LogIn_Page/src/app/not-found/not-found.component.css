@@ -1,0 +1,11 @@
+h1 {
+    color: black;
+    position: relative;
+    text-align: center;
+   
+  }
+.image{
+    height:40em; background-size:cover; width:auto;
+    background-image:url("https://miro.medium.com/v2/resize:fit:4800/1*9RnAf4QWt9hU7dZYBcTNiw.gif");
+    background-position:50% 50%;
+  }
